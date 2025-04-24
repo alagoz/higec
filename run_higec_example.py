@@ -81,7 +81,7 @@ tree = hier_binary_tree(
     link_mat=Z,
     pred_proba_fc=y_pred_proba_fc  # for HE+F variants, pass FC predictions
 )
-
+# Display Exteded Linkage Table
 tree.display_extended_linkage(hc_type=hc_type)
 
 clf_base = copy.deepcopy(XGBClassifier())
@@ -102,5 +102,6 @@ score_hc = tree.score(eval_metric=eval_metric)
 # -----------------------------
 # FINAL RESULTS
 # -----------------------------
-print(f'Flat Classifier Score (FC): {score_fc:.4f}')
-print(f'Hierarchical Classifier Score (HC - {hc_type}): {score_hc:.4f}')
+print(f'\nPerformance Comparison:')
+print(f'- Flat Classification ({eval_metric}): {score_fc:.4f}')
+print(f'- Hierarchical {hc_type} ({eval_metric}): {score_hc:.4f}')
