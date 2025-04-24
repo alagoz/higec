@@ -47,6 +47,7 @@ eval_metric = 'f1'   # Metric: 'f1', 'accuracy', 'auc'
 You can also replace XGBClassifier() with any sklearn-compatible classifier.
 
 📈 Example Output
+
 Extended linkage table for levels:
 level_id:0, subsets:[[1, 5, 0], [2, 3, 4]], branch_id:[8, 9]
 level_id:1, subsets:[[3, 4], [1, 5], [2], [0]], branch_id:[7, 6, 2, 0]
