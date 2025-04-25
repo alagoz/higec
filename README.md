@@ -65,17 +65,16 @@ You can also replace XGBClassifier() with any sklearn-compatible classifier.
 📈 Example Output
 ```
 Extended linkage table for levels:
-level_id:0, subsets:[[1, 5, 0], [2, 3, 4]], branch_id:[8, 9]
-level_id:1, subsets:[[3, 4], [1, 5], [2], [0]], branch_id:[7, 6, 2, 0]
-level_id:2, subsets:[[5], [4], [3], [1]], branch_id:[5, 4, 3, 1]
+level_id:0, subsets:[[3, 4], [0, 1, 2, 5]], branch_id:[8, 9]
+level_id:1, subsets:[[1, 2], [0, 5], [4], [3]], branch_id:[7, 6, 4, 3]
 
 Performance Comparison:
-Flat Classification (f1): 0.6470- 
-Hierarchical lcl+ (f1): 0.6595
+- Flat Classification (f1): 0.6470
+- Hierarchical lcl+f (f1): 0.7377
 ```
 Generated Hierarchy:
 
-![Figure_1](https://github.com/user-attachments/assets/6dcfc0af-169a-4fe6-9a7b-5787a3472128)
+![generated_hier](https://github.com/user-attachments/assets/fa009a38-bb18-4355-9249-2e9d4264da18)
 
 📂 Project Structure
 
@@ -90,3 +89,4 @@ Generated Hierarchy:
 ├── README.md
 
 ├── requirements.txt
+
