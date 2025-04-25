@@ -56,29 +56,23 @@ What It Does:
 You can change the following parameters in run_higec_example.py:
 ```
 did_ = 41            # Dataset ID (from OpenML)
-
 hc_type = 'lcl+'     # HC strategy: 'lcl+', 'lcpn', 'lcn+f', etc.
-
 eval_metric = 'f1'   # Metric: 'f1', 'accuracy', 'auc'
 ```
 You can also replace XGBClassifier() with any sklearn-compatible classifier.
 
 
 📈 Example Output
-
+```
 Extended linkage table for levels:
-
 level_id:0, subsets:[[1, 5, 0], [2, 3, 4]], branch_id:[8, 9]
-
 level_id:1, subsets:[[3, 4], [1, 5], [2], [0]], branch_id:[7, 6, 2, 0]
-
 level_id:2, subsets:[[5], [4], [3], [1]], branch_id:[5, 4, 3, 1]
 
 Performance Comparison:
-
-- Flat Classification (f1): 0.6470- 
-- Hierarchical lcl+ (f1): 0.6595
-
+Flat Classification (f1): 0.6470- 
+Hierarchical lcl+ (f1): 0.6595
+```
 Generated Hierarchy:
 
 ![Figure_1](https://github.com/user-attachments/assets/6dcfc0af-169a-4fe6-9a7b-5787a3472128)
