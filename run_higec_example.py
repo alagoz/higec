@@ -38,7 +38,7 @@ rseed = 0               # Random seed
 X = np.c_[X_num, X_cat]     # Combine numeric and categorical features
 y = np.array(y)
 
-# Split into training and testing sets
+# Randomly split into training and testing sets
 x_tr, x_te, y_tr, y_te = train_test_split(X, y, test_size=test_size, random_state=rseed, stratify=y)
 
 # Sanity check for class labels
