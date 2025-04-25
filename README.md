@@ -57,6 +57,8 @@ You can change the following parameters in run_higec_example.py:
 ```
 did_ = 41            # Dataset ID (from OpenML)
 hc_type = 'lcl+'     # HC strategy: 'lcl+', 'lcpn', 'lcn+f', etc.
+diss_type = 'jsd'    # Dissimilarity type: 'tsd', 'jsd', 'ccm', 'cmd'
+build_type = 'hdc'   # Hierarchy build type: 'hac' or 'hdc'
 eval_metric = 'f1'   # Metric: 'f1', 'accuracy', 'auc'
 ```
 You can also replace XGBClassifier() with any sklearn-compatible classifier.
