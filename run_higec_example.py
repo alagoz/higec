@@ -8,14 +8,24 @@ from HiCl import hier_binary_tree
 import copy
 
 # -----------------------------
-# PARAMETERS
+# CHOOSE DATASET
 # -----------------------------
 did_ = 41               # OpenML Dataset ID
 dname_ = 'Glass'        # Dataset name (optional)
+
+# -----------------------------
+# HiGEC PARAMETERS
+# -----------------------------
+hc_type = 'lcl+'        # Hierarchy exploitation scheme
+diss_type = 'jsd'       # Type of dissimilarity to obtain
+build_type = 'hdc'      # Hierarchy build type
+
+# -----------------------------
+# EVALUATION PARAMETERS
+# -----------------------------
 test_size = 0.2         # Train/Test split ratio
-hc_type = 'lcl+'        # Hierarchical classification scheme
-rseed = 0               # Random seed
 eval_metric = 'f1'      # Evaluation metric
+rseed = 0               # Random seed
 
 # -----------------------------
 # LOAD DATA
@@ -53,7 +63,7 @@ clf_cbd = copy.deepcopy(XGBClassifier())
 t0 = time()
 model_hg = HiGen(
     X, y,
-    dissimilarity_type='tsd',
+    dissimilarity_type=diss_type,
     dissimilarity_output_type='diss_mat',
     metric_cc='euclidean',
     precomputed_pred=False,
@@ -62,7 +72,7 @@ model_hg = HiGen(
     conf_mat=None,
     clf_cbd=clf_cbd,
     cbd_val_size=0.25,
-    build_type='hdc',               # Hierarchical Divisive Clustering
+    build_type=build_type,
     dist_hac='complete',
     split_fun='kmed'
 )
