@@ -21,6 +21,8 @@ pip install -r requirements.txt
 
 **Dependencies:**  
 `numpy` `scipy` `matplotlib` `scikit-learn` `scikit-learn-extra` `proglearn` `xgboost` `lightgbm`
+
+---
 </details>
 
 <details> <summary>⚡ Key Features</summary>
@@ -55,12 +57,14 @@ Pipeline:
 </details>
 
 <details> <summary>🛠 Core Components</summary>
-| File      | Purpose                      |
-|-----------|------------------------------|
-| `HG.py`   | Hierarchy generation         |
-| `HE.py`   | Hierarchy exploitation       |
-| `hdc.py`  | Divisive clustering          |
-| `utils.py`| Data handling & visualization|
+| File      | Purpose                      |  
+|-----------|------------------------------|  
+| `HG.py`   | Hierarchy generation         |  
+| `HE.py`   | Hierarchy exploitation       |  
+| `hdc.py`  | Divisive clustering          |  
+| `utils.py`| Data handling & visualization|  
+
+---
 </details>
 
 <details> <summary>🧪 Customization</summary>
@@ -73,7 +77,7 @@ HiGEC = 'CCM[HAC|COMPLETE]-LCPN[ETC]+F[XGB]'  # HG + HE scheme
 CLF_NAME_FC = 'RF'                # Flat classifier
 ```
 
-Available classifiers: 'RF', 'XGB', 'ETC', 'LGB'.
+Available classifiers: `RF`, `XGB`, `ETC`, `LGB`.
 </details>
 
 <details> <summary>📈 Example Output</summary>
