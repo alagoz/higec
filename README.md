@@ -1,7 +1,7 @@
 # HiGEC: Hierarchy Generation and Extended Classification Framework
 HiGEC is a Python framework for performing hierarchical classification with automated hierarchy generation, flexible exploitation strategies, and integration with modern classifiers.
 
-Results
+Results<br>
 HiGeC is evaluated on 100 multi-class datasets, demonstrating significant improvements over traditional flat classification (FC) approaches, particularly with advanced classifiers like XGBoost, RF, ETC, and LGBM.
 
 MCM comparing the mean AUC of selected HiGEC schemes and top FC including XGB, RF, ETC, and LGB base classifiers.
