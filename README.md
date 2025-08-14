@@ -1,17 +1,15 @@
 # ![HiGEC Logo](https://github.com/user-attachments/assets/a415cb44-9bb8-4a8b-b638-624c3ea02667)
 
-HiGEC  
+**HiGEC**  
 **Hierarchy Generation and Extended Classification Framework**  
 
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)  
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)  
-[![OpenML](https://img.shields.io/badge/OpenML-datasets-orange.svg)](https://www.openml.org/)  
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org)  
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)  
+[![OpenML](https://img.shields.io/badge/OpenML-datasets-orange)](https://www.openml.org)  
 
-HiGEC is a Python framework for improving multi-class classification via **automated hierarchy generation (HE)** and **flexible exploitation (HE) strategies**. It supports hybrid approaches integrating hierarchical and flat classifier outputs, delivering robust F1-score improvements on high-dimensional tabular datasets.  
-
+HiGEC is a Python framework for enhancing multi-class classification through **automated hierarchy generation (HG)** and **flexible hierarchy exploitation (HE)** strategies. It supports hybrid approaches that integrate hierarchical and flat classifier outputs.
 
 ---
-
 <details>
 <summary>🔧 Installation</summary>
 
@@ -21,25 +19,15 @@ cd higec
 pip install -r requirements.txt
 ```
 
-# HiGEC: Hierarchy Generation and Extended Classification Framework
-HiGEC is a Python framework for performing hierarchical classification with automated hierarchy generation, flexible exploitation strategies, and integration with modern classifiers.
-
-🔧 Installation
-```
-git clone https://github.com/your-username/higec.git
-cd higec
-pip install -r requirements.txt
-```
-
 **Dependencies:**  
 `numpy` `scipy` `matplotlib` `scikit-learn` `scikit-learn-extra` `proglearn` `xgboost` `lightgbm`
-
 </details>
+
 <details> <summary>⚡ Key Features</summary>
-- � **Automatic hierarchy generation** from flat class labels
-- 🧩 **Hybrid HE+F classification strategies**
-- 🖇️ Support for **any scikit-learn compatible classifier**
-- 📊 **Benchmark-ready** with OpenML integration
+- � **Automatic hierarchy generation** from flat class labels  
+- 🧩 **Hybrid HE+F classification strategies**  
+- 🖇️ Support for **any scikit-learn compatible classifier**  
+- 📊 **Benchmark-ready** with OpenML integration  
 - 🌳 **Visualization tools** for hierarchy inspection
 
 
