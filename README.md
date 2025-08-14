@@ -24,7 +24,7 @@ scipy
 matplotlib
 
 
-📊 What This Project Does
+📊 What This Project Does 
 HiGEC provides:
 - Automated Hierarchy Generation from flat-labeled datasets
 - Probabilistic and hybrid Hierarchy Exploitation strategies
