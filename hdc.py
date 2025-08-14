@@ -455,5 +455,4 @@ class linkHDC():
             
         else:
             raise ValueError("Not a valid distance method provided.")
-
         return d
