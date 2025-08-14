@@ -9,7 +9,7 @@ from sklearn.cluster import (MeanShift,
                              DBSCAN,)
 from sklearn_extra.cluster import KMedoids
 from sklearn.mixture import GaussianMixture
-from HiCl import hier_node
+from HE import hier_node
 
 n_clust=2
 rs = None
@@ -455,4 +455,5 @@ class linkHDC():
             
         else:
             raise ValueError("Not a valid distance method provided.")
+
         return d
