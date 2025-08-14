@@ -24,15 +24,15 @@ pip install -r requirements.txt
 </details>
 
 <details> <summary>⚡ Key Features</summary>
-- � **Automatic hierarchy generation** from flat class labels
+� **Automatic hierarchy generation** from flat class labels
+
+🧩 **Hybrid HE+F classification strategies**
   
-- 🧩 **Hybrid HE+F classification strategies**
+🖇️ Support for **any scikit-learn compatible classifier**
   
-- 🖇️ Support for **any scikit-learn compatible classifier**
+📊 **Benchmark-ready** with OpenML integration
   
-- 📊 **Benchmark-ready** with OpenML integration
-  
-- 🌳 **Visualization tools** for hierarchy inspection
+🌳 **Visualization tools** for hierarchy inspection
   
 </details>
 
@@ -40,64 +40,62 @@ pip install -r requirements.txt
 <details> <summary>🚀 Quick Start</summary>
 
 Run the example:
-
+```bash
 python run_higec_example.py
+```
 
+Pipeline:
+1. Downloads OpenML dataset
 
-Steps performed:
+2. Trains flat classifier baseline
 
-Download dataset from OpenML
+3. Generates class hierarchy
 
-Flat classification with a base classifier
-
-Construct hierarchical class structure
-
-Train hierarchical classifier
-
-Compare F1-score (flat vs hierarchical)
-
+4. Evaluates hierarchical approach
 </details>
+
 <details> <summary>🛠 Core Components</summary>
-Component	Purpose
-HG.py	Hierarchy Generation (distance- or classifier-based)
-HE.py	Hierarchy Exploitation (training/prediction wrapper)
-diss_mat_embedding.py	Embed dissimilarity matrices
-hdc.py	Hierarchical Divisive Clustering
-jsd.py	Jensen-Shannon Distance computation
-tsd.py	Task Similarity Distance computation
-utils.py	Data loading, scoring, plotting, label checks
-run_higec_example.py	Demo script with configurable HiGEC settings
+| File      | Purpose                      |
+|-----------|------------------------------|
+| `HG.py`   | Hierarchy generation         |
+| `HE.py`   | Hierarchy exploitation       |
+| `hdc.py`  | Divisive clustering          |
+| `utils.py`| Data handling & visualization|
 </details>
+
 <details> <summary>🧪 Customization</summary>
 
-Adjust parameters in run_higec_example.py:
+Adjust parameters in 'run_higec_example.py':
 
+```bash
 DID = 46264                       # OpenML dataset ID
-HiGEC = 'CCM[HAC|COMPLETE]-LCPN[ETC]+F[XGB]'  # Hierarchy + Exploitation scheme
+HiGEC = 'CCM[HAC|COMPLETE]-LCPN[ETC]+F[XGB]'  # HG + HE scheme
 CLF_NAME_FC = 'RF'                # Flat classifier
+```
 
-
-Available classifiers: RF, XGB, ETC, LGB.
-
+Available classifiers: 'RF', 'XGB', 'ETC', 'LGB'.
 </details>
+
 <details> <summary>📈 Example Output</summary>
 
+```bash
 Extended Linkage Table:
 
 node_id:0, node_type:parent, subsets:[[0], [1,2,3,4]], branch_ids:[0,7], parent_id:None
 node_id:1, node_type:parent, subsets:[[3,4],[1,2]], branch_ids:[5,6], parent_id:0
+```
 
-
+```bash
 Performance Comparison:
 
 - Flat Classification (RF) (f1): 0.3517 in 0.4309 seconds
 - HiGEC: CCM[HAC|COMPLETE]-LCPN[ETC]+F[XGB] (f1): 0.3700 in 1.1853 seconds
-
+```
 
 Generated Hierarchy:
 ![example_hierarchy](https://github.com/user-attachments/assets/96e78795-541b-41a1-a7bb-a945b65411fa)
-
 </details>
+
 <details> <summary>📊 Benchmark Results</summary>
 
 HiGEC was evaluated on 100 multi-class tabular datasets, showing consistent F1-score gains, particularly with hybrid HE+F configurations.
