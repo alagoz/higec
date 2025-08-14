@@ -30,6 +30,19 @@ git clone https://github.com/your-username/higec.git
 cd higec
 pip install -r requirements.txt
 ```
+
+**Dependencies:**  
+`numpy` `scipy` `matplotlib` `scikit-learn` `scikit-learn-extra` `proglearn` `xgboost` `lightgbm`
+
+</details>
+<details> <summary>⚡ Key Features</summary>
+- � **Automatic hierarchy generation** from flat class labels
+- 🧩 **Hybrid HE+F classification strategies**
+- 🖇️ Support for **any scikit-learn compatible classifier**
+- 📊 **Benchmark-ready** with OpenML integration
+- 🌳 **Visualization tools** for hierarchy inspection
+
+
 Dependencies: numpy, scipy, matplotlib, scikit-learn, scikit-learn-extra, proglearn, xgboost, lightgbm
 
 </details>
