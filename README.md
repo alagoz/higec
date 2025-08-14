@@ -108,15 +108,35 @@ Generated Hierarchy:
 ---
 </details>
 
-<details> <summary>📊 Benchmark Results</summary>
+<details>
+<summary>📊 Benchmark Results</summary>
 
-HiGEC was evaluated on 100 multi-class tabular datasets, showing consistent F1-score gains, particularly with hybrid HE+F configurations.
+HiGEC was evaluated on **100 multi-class tabular datasets**, showing consistent F1-score gains over flat classification (FC), particularly with hybrid HE+F configurations.
 
-Mean F1 Comparison (HiGEC vs FC):
+---
+
+### Mean F1 Comparison (HiGEC vs FC)
+
 <img width="1476" height="387" alt="fig_mcm_higec_vs_fc" src="https://github.com/user-attachments/assets/614581db-e193-44dc-a5d2-998db14887b5" />
 
-Mean F1 Scores & Std Values:
+**Download raw results (F1 scores per dataset):**  
+- [f1_scores_fc_vs_higec.csv](./results/f1_scores_fc_vs_higec.csv) – Contains per-dataset F1-scores of FC and selected HiGEC algorithms.  
+- Columns: `dataset_id`, `dataset_name`, `fc_rf`, `fc_xgb`, `fc_etc`, `fc_lgb`, `higec_scheme1`, `higec_scheme2`, ...
+
+---
+
+### Mean F1 Scores & Standard Deviations
+
 ![table](https://github.com/user-attachments/assets/7e8000ef-de32-4aa2-87a6-76da536a9d26)
+
+**Download mean performance metrics for all FC algorithms:**  
+- [fc_mean_performance.csv](./results/fc_mean_performance.csv) – Contains mean scores across datasets for each FC algorithm.  
+- Columns: `classifier`, `mean_f1`, `mean_acc`, `mean_auc`, `mean_duration_sec`
+
+---
+
+These CSV files allow full reproducibility and further statistical analysis of HiGEC’s performance compared to FC.
+</details>
 
 ---
 </details>
