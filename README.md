@@ -1,4 +1,4 @@
-# ![HiGEC Logo](https://github.com/user-attachments/assets/a415cb44-9bb8-4a8b-b638-624c3ea02667)
+# ![HiGEC Logo]<img width="936" height="210" alt="fig_flowchart_small" src="https://github.com/user-attachments/assets/cbd2a000-49f8-49eb-a839-deaa8e64444e" />
 
 **HiGEC**  
 **Hierarchy Generation and Extended Classification Framework**  
