@@ -3,13 +3,7 @@ HiGEC is a Python framework for performing hierarchical classification with auto
 
 HiGeC is evaluated on 100 multi-class datasets, demonstrating significant improvements over traditional flat classification (FC) approaches, particularly with advanced classifiers like XGBoost, RF, ETC, and LGBM.
 
-![fig_cdd_hge_vs_FC_vs_OVA_f1]()
-
-| Dataset | RF | XGB  |
-| --- | --- | --- |
-| dataset-1 | <span style=\"color:red;\">0.92</span> | <span style=\"color:blue;\">0.85±0.01</span>  |
-| dataset-2 | 0.88±0.02 | <span style=\"color:green;\">0.90</span>  |
-
+![table](https://github.com/user-attachments/assets/7e8000ef-de32-4aa2-87a6-76da536a9d26)
 
 🔧 Installation
 ```
