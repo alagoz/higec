@@ -25,10 +25,15 @@ pip install -r requirements.txt
 
 <details> <summary>⚡ Key Features</summary>
 - � **Automatic hierarchy generation** from flat class labels
+  
 - 🧩 **Hybrid HE+F classification strategies**
+  
 - 🖇️ Support for **any scikit-learn compatible classifier**
+  
 - 📊 **Benchmark-ready** with OpenML integration
+  
 - 🌳 **Visualization tools** for hierarchy inspection
+  
 </details>
 
 
