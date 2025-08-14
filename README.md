@@ -60,8 +60,9 @@ Pipeline:
 </details>
 
 <details> <summary>🛠 Core Components</summary>
+
 | File      | Purpose                      |
-  
+
 |-----------|------------------------------|
 
 | `HG.py`   | Hierarchy generation         |
