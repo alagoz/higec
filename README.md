@@ -136,7 +136,6 @@ HiGEC was evaluated on **100 multi-class tabular datasets**, showing consistent 
 ---
 
 These CSV files allow full reproducibility and further statistical analysis of HiGEC’s performance compared to FC.
-</details>
 
 ---
 </details>
