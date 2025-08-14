@@ -55,15 +55,22 @@ Pipeline:
 3. Generates class hierarchy
 
 4. Evaluates hierarchical approach
+
+---
 </details>
 
 <details> <summary>🛠 Core Components</summary>
-| File      | Purpose                      |  
-|-----------|------------------------------|  
-| `HG.py`   | Hierarchy generation         |  
-| `HE.py`   | Hierarchy exploitation       |  
-| `hdc.py`  | Divisive clustering          |  
-| `utils.py`| Data handling & visualization|  
+| File      | Purpose                      |
+  
+|-----------|------------------------------|
+
+| `HG.py`   | Hierarchy generation         |
+
+| `HE.py`   | Hierarchy exploitation       |
+
+| `hdc.py`  | Divisive clustering          |
+
+| `utils.py`| Data handling & visualization|
 
 ---
 </details>
@@ -79,6 +86,8 @@ CLF_NAME_FC = 'RF'                # Flat classifier
 ```
 
 Available classifiers: `RF`, `XGB`, `ETC`, `LGB`.
+
+---
 </details>
 
 <details> <summary>📈 Example Output</summary>
@@ -112,6 +121,9 @@ Mean F1 Comparison (HiGEC vs FC):
 
 Mean F1 Scores & Std Values:
 ![table](https://github.com/user-attachments/assets/7e8000ef-de32-4aa2-87a6-76da536a9d26)
+
+---
+</details>
 
 <details> <summary>📖 References</summary>
 
