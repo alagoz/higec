@@ -96,8 +96,10 @@ Performance Comparison:
 - HiGEC: CCM[HAC|COMPLETE]-LCPN[ETC]+F[XGB] (f1): 0.3700 in 1.1853 seconds
 ```
 
-Generated Hierarchy:
+Generated Hierarchy:  
 ![example_hierarchy](https://github.com/user-attachments/assets/96e78795-541b-41a1-a7bb-a945b65411fa)
+
+---
 </details>
 
 <details> <summary>📊 Benchmark Results</summary>
