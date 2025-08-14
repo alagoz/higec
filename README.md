@@ -24,27 +24,13 @@ pip install -r requirements.txt
 </details>
 
 <details> <summary>⚡ Key Features</summary>
-- � **Automatic hierarchy generation** from flat class labels  
-- 🧩 **Hybrid HE+F classification strategies**  
-- 🖇️ Support for **any scikit-learn compatible classifier**  
-- 📊 **Benchmark-ready** with OpenML integration  
+- � **Automatic hierarchy generation** from flat class labels   
+- 🧩 **Hybrid HE+F classification strategies**
+- 🖇️ Support for **any scikit-learn compatible classifier**
+- 📊 **Benchmark-ready** with OpenML integration
 - 🌳 **Visualization tools** for hierarchy inspection
-
-
-Dependencies: numpy, scipy, matplotlib, scikit-learn, scikit-learn-extra, proglearn, xgboost, lightgbm
-
 </details>
-<details> <summary>⚡ Features</summary>
 
-Automatic Hierarchy Generation from flat-labeled datasets
-
-Advanced Hierarchy Exploitation (HE+) and Hybrid HE+F approaches
-
-Support for any multi-class base classifier: RF, XGB, ETC, LGB, etc.
-
-Benchmark-ready with OpenML datasets
-
-Visualizations: dendrograms & extended linkage tables
 
 </details>
 <details> <summary>🚀 Quick Start</summary>
