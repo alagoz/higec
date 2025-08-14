@@ -61,17 +61,12 @@ Pipeline:
 
 <details> <summary>🛠 Core Components</summary>
 
-| File      | Purpose                      |
-
-|-----------|------------------------------|
-
-| `HG.py`   | Hierarchy generation         |
-
-| `HE.py`   | Hierarchy exploitation       |
-
-| `hdc.py`  | Divisive clustering          |
-
-| `utils.py`| Data handling & visualization|
+| File       | Purpose                           |
+|------------|-----------------------------------|
+| `HG.py`    | Hierarchy generation              |
+| `HE.py`    | Hierarchy exploitation            |
+| `hdc.py`   | Divisive clustering               |
+| `utils.py` | Data handling & visualization     |
 
 ---
 </details>
