@@ -121,8 +121,7 @@ HiGEC was evaluated on **100 multi-class tabular datasets**, showing consistent 
 
 **Download raw results (F1 scores per dataset):**  
 - [f1_scores_fc_vs_higec.csv](./results/f1_scores_fc_vs_higec.csv) – Contains per-dataset F1-scores of FC and selected HiGEC algorithms.  
-- Columns: `dataset_id`, `dataset_name`, `fc_rf`, `fc_xgb`, `fc_etc`, `fc_lgb`, `higec_scheme1`, `higec_scheme2`, ...
-
+- Columns: `Index`, `Name`, `RF`, `XGB`, `ETC`, `LGB`, `LCN[XGB]+`, `LCPN[ETC]+F[XGB]`, `LCPN[RF]+F[XGB]`, `LCPN[XGB]+F[RF]`
 ---
 
 ### Mean F1 Scores & Standard Deviations
