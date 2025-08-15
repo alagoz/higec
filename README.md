@@ -122,17 +122,17 @@ HiGEC was evaluated on **100 multi-class tabular datasets**, showing consistent 
 
 ### Mean F1 Scores & Standard Deviations
 
-![table](https://github.com/user-attachments/assets/7e8000ef-de32-4aa2-87a6-76da536a9d26)
+![table](https://github.com/user-attachments/assets/b7b5a00c-e597-4576-bc19-b1d881d66541)
 
 ---
 
 **Download raw results (F1 scores per dataset):**  
-- [f1_scores_fc_vs_higec.csv](./results/f1_scores_fc_vs_higec.csv) – Contains per-dataset F1-scores of FC and selected HiGEC algorithms.  
-- Columns: `Index`, `Name`, `RF`, `XGB`, `ETC`, `LGB`, `LCN[XGB]+`, `LCPN[ETC]+F[XGB]`, `LCPN[RF]+F[XGB]`, `LCPN[XGB]+F[RF]`
+- [f1_scores_fc_vs_higec.csv](./results/f1_scores_fc_vs_higec.csv) – Contains per-dataset F1-scores of FC and selected 9 HiGEC algorithms.  
+- Columns: `index`, `short`, `RF`, `XGB`, `ETC`, `LGB`, `LCN[XGB]+`, `LCPN[ETC]+F[XGB]`, `LCPN[RF]+F[XGB]`, `LCPN[XGB]+F[RF]`, `LCL[XGB]+F[RF]`, `LCPN[RF]+F[RF]`, `LCL[RF]+F[XGB]`, `LCPN[LGB]+F[XGB]`, `LCPN[XGB]+F[XGB]` 
 
 **Download mean performance metrics for all FC algorithms:**  
 - [fc_mean_performance.csv](./results/fc_mean_performance.csv) – Contains mean scores across datasets for each FC algorithm.  
-- Columns: `classifier`, `mean_f1`, `mean_acc`, `mean_auc`, `mean_duration_sec`
+- Columns: `index`, `short`, `mean_f1_xgb`, `mean_f1_catb`, ... , `mean_acc_xgb`, `mean_acc_catb`, ... , `mean_auc_xgb`, `mean_auc_catb`, ... , `total_dur_xgb`, `total_dur_catb`, ...
 
 
 These CSV files allow full reproducibility and further statistical analysis of HiGEC’s performance compared to FC.
